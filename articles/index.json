@@ -1,0 +1,30 @@
+{
+  "last_updated": "2026-02-10T15:49:48.508966",
+  "total_articles": 4,
+  "articles": [
+    {
+      "id": "20260210-01",
+      "title": "From Clawdbot to OpenClaw: The Open-Source AI Agent Generating Global Buzz",
+      "category": "openclaw",
+      "date": "2026-02-10"
+    },
+    {
+      "id": "20260210-02",
+      "title": "OpenClaw, Moltbook and the Future of AI Agents",
+      "category": "openclaw",
+      "date": "2026-02-10"
+    },
+    {
+      "id": "20260210-03",
+      "title": "Resolve AI Hits $1 Billion Valuation for Outage-Thwarting AI Agents",
+      "category": "ai",
+      "date": "2026-02-10"
+    },
+    {
+      "id": "20260210-04",
+      "title": "Global VC Investment Surged in January 2026",
+      "category": "startup",
+      "date": "2026-02-10"
+    }
+  ]
+}
