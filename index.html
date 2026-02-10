@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Father & Sons Solutions — AI-Powered Automation</title>
-    <meta name="description" content="OpenClaw experts delivering AI automation solutions. Build smarter workflows, automate tasks, and scale your business with cutting-edge technology.">
-    <meta name="keywords" content="AI, OpenClaw, automation, artificial intelligence, machine learning, workflows, tech solutions">
+    <title>Father & Sons Solutions — AI & OpenClaw News</title>
+    <meta name="description" content="Daily coverage of artificial intelligence, OpenClaw developments, and technology trends. Curated news for professionals.">
+    <meta name="keywords" content="AI, OpenClaw, artificial intelligence, technology news, automation, machine learning, tech trends">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Sora:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
@@ -42,22 +42,19 @@
         .reveal-d4{transition-delay:.4s}
         .nav{position:fixed;top:0;left:0;right:0;z-index:1000; padding:0 64px;height:72px; display:flex;align-items:center;justify-content:space-between; background:rgba(7,7,10,0.6); backdrop-filter:blur(40px) saturate(180%); border-bottom:1px solid var(–border); transition:all .4s var(–ease); }
         .nav.scrolled{height:60px;background:rgba(7,7,10,0.9)}
-        .nav-brand{ font-family:var(–serif);font-size:1.3rem;font-weight:600; letter-spacing:-0.02em; display:flex;align-items:center;gap:10px; }
-        .nav-brand .mark{ width:28px;height:28px;border-radius:8px; background:linear-gradient(135deg,var(–accent),#e8c468); display:flex;align-items:center;justify-content:center; font-family:var(–sans);font-weight:700;font-size:0.7rem;color:var(–bg); }
+        .nav-brand{ font-family:var(–serif);font-size:1.3rem;font-weight:600; letter-spacing:-0.02em; }
         .nav-center{display:flex;gap:36px}
         .nav-center a{ font-size:0.8rem;font-weight:400;color:var(–text-secondary); letter-spacing:0.02em;transition:color .3s;position:relative; }
         .nav-center a::after{ content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px; background:var(–accent);transform:scaleX(0);transition:transform .3s var(–ease); transform-origin:right; }
         .nav-center a:hover{color:var(–text)}
         .nav-center a:hover::after{transform:scaleX(1);transform-origin:left}
         .nav-right{display:flex;align-items:center;gap:24px}
-        .nav-login{font-size:0.8rem;color:var(–text-secondary);transition:color .3s}
-        .nav-login:hover{color:var(–text)}
-        .btn-nav{ font-size:0.75rem;font-weight:600;letter-spacing:0.04em; padding:10px 24px;border-radius:100px; background:var(–text);color:var(–bg); transition:all .3s var(–ease); }
-        .btn-nav:hover{background:var(–accent);transform:translateY(-1px);box-shadow:0 12px 40px var(–accent-glow)}
-        .hero{ min-height:100vh;display:flex;align-items:center;justify-content:center; text-align:center;padding:160px 24px 120px; position:relative;z-index:1; }
+        .nav-subscribe{ font-size:0.75rem;font-weight:600;letter-spacing:0.04em; padding:10px 24px;border-radius:100px; background:var(–text);color:var(–bg); transition:all .3s var(–ease); }
+        .nav-subscribe:hover{background:var(–accent);transform:translateY(-1px);box-shadow:0 12px 40px var(–accent-glow)}
+        .hero{ min-height:70vh;display:flex;align-items:center;justify-content:center; text-align:center;padding:140px 24px 100px; position:relative;z-index:1; }
         .hero-inner{max-width:820px}
         .hero .label{justify-content:center;margin-bottom:40px}
-        .hero .display{font-size:clamp(3rem,7vw,5.5rem)}
+        .hero .display{font-size:clamp(2.8rem,6vw,5rem)}
         .hero-body{ font-size:1.05rem;font-weight:300;line-height:1.8; color:var(–text-secondary);max-width:540px;margin:28px auto 0; }
         .hero-actions{display:flex;gap:14px;justify-content:center;margin-top:48px}
         .btn-hero-primary{ padding:16px 40px;border-radius:100px; background:var(–text);color:var(–bg); font-size:0.85rem;font-weight:600;letter-spacing:0.02em; transition:all .35s var(–ease); position:relative;overflow:hidden; }
@@ -67,147 +64,58 @@
         .btn-hero-primary:hover::before{opacity:1}
         .btn-hero-secondary{ padding:16px 40px;border-radius:100px; border:1px solid var(–border-hover); font-size:0.85rem;font-weight:400;color:var(–text-secondary); letter-spacing:0.02em;transition:all .35s var(–ease); }
         .btn-hero-secondary:hover{border-color:rgba(255,255,255,0.2);color:var(–text);background:rgba(255,255,255,0.02)}
-        .hero-trust{ margin-top:80px;display:flex;flex-direction:column;align-items:center;gap:20px; }
-        .hero-trust-label{font-family:var(–mono);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(–text-tertiary)}
-        .hero-trust-logos{display:flex;gap:48px;align-items:center;opacity:0.3}
-        .hero-trust-logos span{font-family:var(–sans);font-size:0.85rem;font-weight:600;letter-spacing:0.06em}
         .divider{width:100%;height:1px;background:var(–border);position:relative;z-index:1}
-        .features{padding:140px 0;position:relative;z-index:1}
-        .features-header{margin-bottom:72px}
-        .features-header .display{font-size:clamp(2.2rem,4.5vw,3.6rem);max-width:560px}
-        .features-header-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
-        .features-header p{ font-size:0.9rem;color:var(–text-secondary);line-height:1.8;max-width:380px;font-weight:300;text-align:right; }
-        .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-        .bento-card{ background:var(–surface); border:1px solid var(–border); border-radius:20px; padding:36px; position:relative;overflow:hidden; transition:all .5s var(–ease); }
-        .bento-card:hover{border-color:var(–border-hover);transform:translateY(-4px)}
-        .bento-card::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
-        .bc-1{grid-column:span 8}
-        .bc-2{grid-column:span 4}
-        .bc-3{grid-column:span 4}
-        .bc-4{grid-column:span 4}
-        .bc-5{grid-column:span 4}
-        .bento-card .b-icon{ width:48px;height:48px;border-radius:14px; background:var(–accent-dim); display:flex;align-items:center;justify-content:center; margin-bottom:24px;font-size:1.1rem; }
-        .bento-card h3{font-family:var(–serif);font-size:1.25rem;font-weight:500;margin-bottom:10px;line-height:1.3}
-        .bento-card p{font-size:0.82rem;color:var(–text-secondary);line-height:1.7;font-weight:300}
-        .bc-1 .b-visual{ position:absolute;right:36px;bottom:36px; width:280px;height:160px;border-radius:14px; background:var(–surface-2);border:1px solid var(–border); overflow:hidden;display:flex;flex-direction:column; }
-        .b-visual-header{ padding:12px 16px;border-bottom:1px solid var(–border); font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary); display:flex;justify-content:space-between; }
-        .b-visual-bars{flex:1;display:flex;align-items:flex-end;gap:4px;padding:12px 16px}
-        .b-visual-bar{ flex:1;border-radius:4px 4px 0 0; background:linear-gradient(180deg,var(–accent),rgba(212,168,83,0.2)); transition:height .6s var(–ease); }
-        .stats-ribbon{ display:grid;grid-template-columns:repeat(4,1fr);gap:12px; margin-top:12px; }
-        .stat-pill{ background:var(–surface);border:1px solid var(–border); border-radius:16px;padding:28px 24px; text-align:center;transition:all .4s var(–ease); }
-        .stat-pill:hover{border-color:var(–border-hover);transform:translateY(-2px)}
-        .stat-pill .s-val{ font-family:var(–mono);font-size:1.6rem;font-weight:500; letter-spacing:-0.04em; }
-        .stat-pill .s-val.gold{color:var(–accent)}
-        .stat-pill .s-val.green{color:var(–emerald)}
-        .stat-pill .s-val.blue{color:var(–blue)}
-        .stat-pill .s-label{ font-size:0.65rem;color:var(–text-tertiary);margin-top:6px; text-transform:uppercase;letter-spacing:0.12em;font-weight:500; }
-        .editorial{padding:140px 0;position:relative;z-index:1}
-        .editorial-header{margin-bottom:72px}
-        .editorial-header .display{font-size:clamp(2.2rem,4.5vw,3.6rem);max-width:600px}
-        .news-list{display:flex;flex-direction:column;gap:0}
-        .news-item{ display:grid;grid-template-columns:auto 1fr auto;gap:40px; align-items:center; padding:36px 0; border-top:1px solid var(–border); transition:all .4s var(–ease); cursor:pointer; }
-        .news-item:last-child{border-bottom:1px solid var(–border)}
-        .news-item:hover{padding-left:16px}
-        .news-item:hover .news-arrow{opacity:1;transform:translateX(0)}
-        .news-num{ font-family:var(–mono);font-size:0.7rem;color:var(–text-tertiary); min-width:32px; }
-        .news-content h3{ font-family:var(–serif);font-size:1.35rem;font-weight:500; line-height:1.35;margin-bottom:8px;transition:color .3s; }
-        .news-item:hover .news-content h3{color:var(–accent)}
-        .news-content .news-excerpt{ font-size:0.82rem;color:var(–text-secondary);line-height:1.7; font-weight:300;max-width:600px; }
-        .news-meta-row{ display:flex;align-items:center;gap:16px;margin-top:12px; }
-        .news-cat{ font-family:var(–mono);font-size:0.6rem;font-weight:500; letter-spacing:0.1em;text-transform:uppercase; padding:4px 12px;border-radius:100px; }
-        .news-cat.ai{background:var(–accent-dim);color:var(–accent)}
-        .news-cat.tech{background:rgba(110,168,254,0.1);color:var(–blue)}
-        .news-cat.openclaw{background:rgba(62,232,181,0.1);color:var(–emerald)}
-        .news-cat.startup{background:var(–emerald-dim);color:var(–emerald)}
-        .news-date{font-family:var(–mono);font-size:0.65rem;color:var(–text-tertiary)}
-        .news-arrow{ font-size:1.2rem;color:var(–text-tertiary);opacity:0;transform:translateX(-8px); transition:all .4s var(–ease); }
-        .results{padding:140px 0;position:relative;z-index:1}
-        .results-header{margin-bottom:72px}
-        .results-header .display{font-size:clamp(2.2rem,4.5vw,3.6rem);max-width:600px}
-        .results-header p{ font-size:0.9rem;color:var(–text-secondary);font-weight:300;margin-top:12px;max-width:480px;line-height:1.7; }
-        .results-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-        .results-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px;position:relative;overflow:hidden; transition:all .4s var(–ease); }
-        .results-card:hover{border-color:var(–border-hover)}
-        .results-card .r-val{ font-family:var(–mono);font-size:clamp(3rem,6vw,4.5rem); font-weight:300;letter-spacing:-0.05em;line-height:1; }
-        .results-card .r-val.gold{color:var(–accent)}
-        .results-card .r-val.green{color:var(–emerald)}
-        .results-card .r-desc{font-size:0.85rem;color:var(–text-secondary);margin-top:12px;font-weight:300;line-height:1.6}
-        .results-card .r-glow{ position:absolute;width:200px;height:200px;border-radius:50%; filter:blur(80px);pointer-events:none;opacity:0.08; }
-        .results-card .r-glow.g1{background:var(–accent);top:-60px;right:-60px}
-        .results-card .r-glow.g2{background:var(–emerald);bottom:-60px;left:-60px}
-        .results-chart-card{ grid-column:span 2;background:var(–surface); border:1px solid var(–border);border-radius:20px; padding:48px;position:relative;overflow:hidden; }
-        .rc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:36px}
-        .rc-header h4{font-family:var(–serif);font-size:1.15rem;font-weight:500}
-        .rc-badge{ font-family:var(–mono);font-size:0.65rem;font-weight:500; padding:6px 16px;border-radius:100px; background:var(–emerald-dim);color:var(–emerald); letter-spacing:0.06em; }
-        .chart-area{height:200px;display:flex;align-items:flex-end;gap:6px;position:relative}
-        .chart-area::before{ content:'';position:absolute;bottom:0;left:0;right:0;height:1px; background:var(–border); }
-        .c-bar{ flex:1;border-radius:6px 6px 0 0;position:relative; transition:all .5s var(–ease);cursor:pointer; }
-        .c-bar:hover{filter:brightness(1.4)}
-        .c-bar .c-tip{ position:absolute;top:-28px;left:50%;transform:translateX(-50%); font-family:var(–mono);font-size:0.6rem;color:var(–text-secondary); opacity:0;transition:opacity .3s;white-space:nowrap; background:var(–surface-2);padding:3px 8px;border-radius:6px; border:1px solid var(–border); }
-        .c-bar:hover .c-tip{opacity:1}
-        .chart-labels{display:flex;gap:6px;margin-top:12px}
-        .chart-labels span{ flex:1;text-align:center;font-family:var(–mono); font-size:0.55rem;color:var(–text-tertiary);letter-spacing:0.08em; }
-        .pricing{padding:140px 0;position:relative;z-index:1}
-        .pricing-header{margin-bottom:72px;text-align:center}
-        .pricing-header .label{justify-content:center}
-        .pricing-header .display{font-size:clamp(2.2rem,4.5vw,3.6rem);margin:0 auto}
-        .pricing-header p{color:var(–text-secondary);font-size:0.9rem;font-weight:300;margin-top:16px}
-        .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-        .price-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:44px 36px; transition:all .4s var(–ease);position:relative; display:flex;flex-direction:column; }
-        .price-card:hover{border-color:var(–border-hover);transform:translateY(-4px)}
-        .price-card.featured{ border-color:rgba(212,168,83,0.25); background:linear-gradient(180deg,rgba(212,168,83,0.03),var(–surface)); }
-        .price-card.featured::before{ content:'Recommended';position:absolute;top:-1px;left:50%;transform:translateX(-50%); font-family:var(–mono);font-size:0.55rem;font-weight:600; letter-spacing:0.12em;text-transform:uppercase; padding:6px 20px;border-radius:0 0 10px 10px; background:var(–accent);color:var(–bg); }
-        .p-tier{ font-family:var(–mono);font-size:0.6rem;font-weight:500; letter-spacing:0.15em;text-transform:uppercase; color:var(–text-tertiary);margin-bottom:20px; }
-        .p-amount{ font-family:var(–serif);font-size:3.2rem;font-weight:400; letter-spacing:-0.03em;line-height:1; }
-        .p-amount span{font-family:var(–sans);font-size:0.85rem;font-weight:300;color:var(–text-tertiary)}
-        .p-desc{font-size:0.8rem;color:var(–text-secondary);margin-top:12px;line-height:1.6;font-weight:300}
-        .p-divider{width:100%;height:1px;background:var(–border);margin:28px 0}
-        .p-features{list-style:none;display:flex;flex-direction:column;gap:14px;flex:1}
-        .p-features li{ font-size:0.82rem;color:var(–text-secondary);font-weight:300; display:flex;align-items:flex-start;gap:12px;line-height:1.5; }
-        .p-features li::before{ content:'';width:5px;height:5px;border-radius:50%; background:var(–accent);margin-top:6px;flex-shrink:0; }
-        .p-btn{ width:100%;margin-top:32px;padding:16px;border-radius:100px; font-size:0.82rem;font-weight:600;text-align:center; letter-spacing:0.02em;transition:all .35s var(–ease); }
-        .p-btn.ghost{border:1px solid var(–border-hover);color:var(–text)}
-        .p-btn.ghost:hover{border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.02)}
-        .p-btn.solid{background:var(–accent);color:var(–bg)}
-        .p-btn.solid:hover{background:#e0b85e;transform:translateY(-2px);box-shadow:0 16px 48px rgba(212,168,83,0.12)}
-        .testimonials{padding:140px 0;position:relative;z-index:1}
-        .testimonials-header{margin-bottom:72px}
-        .testimonials-header .display{font-size:clamp(2.2rem,4.5vw,3.6rem);max-width:500px}
-        .test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-        .test-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .4s var(–ease);display:flex;flex-direction:column; }
-        .test-card:hover{border-color:var(–border-hover);transform:translateY(-3px)}
-        .test-stars{display:flex;gap:3px;margin-bottom:24px}
-        .test-stars .star{width:14px;height:14px;fill:var(–accent)}
-        .test-quote{ font-family:var(–serif);font-size:1.05rem;font-weight:400; font-style:italic;line-height:1.65;color:var(–text-secondary); flex:1;margin-bottom:28px; }
-        .test-author{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(–border)}
-        .test-avatar{ width:40px;height:40px;border-radius:50%; background:linear-gradient(135deg,var(–accent),#e8c468); display:flex;align-items:center;justify-content:center; font-family:var(–mono);font-weight:600;font-size:0.7rem;color:var(–bg); }
-        .test-name{font-size:0.82rem;font-weight:600}
-        .test-role{font-size:0.7rem;color:var(–text-tertiary);margin-top:2px}
-        .faq{padding:140px 0;position:relative;z-index:1}
-        .faq-layout{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:start}
-        .faq-left .display{font-size:clamp(2rem,3.5vw,2.8rem)}
-        .faq-left p{font-size:0.85rem;color:var(–text-secondary);line-height:1.7;font-weight:300;margin-top:16px;max-width:360px}
-        .faq-list{display:flex;flex-direction:column;gap:0}
-        .faq-item{border-bottom:1px solid var(–border)}
-        .faq-item:first-child{border-top:1px solid var(–border)}
-        .faq-q{ padding:24px 0;display:flex;justify-content:space-between;align-items:center; cursor:pointer;font-size:0.95rem;font-weight:500; transition:color .3s;gap:24px; }
-        .faq-q:hover{color:var(–accent)}
-        .faq-arrow{ width:32px;height:32px;border-radius:50%; border:1px solid var(–border); display:flex;align-items:center;justify-content:center; font-size:0.65rem;color:var(–text-tertiary); transition:all .4s var(–ease);flex-shrink:0; }
-        .faq-item.open .faq-arrow{transform:rotate(180deg);border-color:var(–accent);color:var(–accent)}
-        .faq-a{max-height:0;overflow:hidden;transition:max-height .5s var(–ease)}
-        .faq-item.open .faq-a{max-height:200px}
-        .faq-a p{font-size:0.85rem;color:var(–text-secondary);line-height:1.7;font-weight:300;padding-bottom:24px}
-        .cta-section{ padding:140px 0;position:relative;z-index:1;text-align:center; }
-        .cta-box{ background:var(–surface);border:1px solid var(–border); border-radius:28px;padding:80px 48px; position:relative;overflow:hidden; }
-        .cta-box::before{ content:'';position:absolute;top:-2px;left:20%;right:20%;height:2px; background:linear-gradient(90deg,transparent,var(–accent),transparent); }
-        .cta-box .display{font-size:clamp(2rem,4vw,3rem);max-width:500px;margin:0 auto}
-        .cta-box p{color:var(–text-secondary);font-size:0.9rem;font-weight:300;margin-top:16px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.7}
-        .cta-input-row{ display:flex;gap:10px;max-width:420px;margin:36px auto 0; }
-        .cta-input{ flex:1;padding:16px 24px;border-radius:100px; background:var(–bg);border:1px solid var(–border); color:var(–text);font-family:var(–sans);font-size:0.85rem; outline:none;transition:border-color .3s; }
-        .cta-input::placeholder{color:var(–text-tertiary)}
-        .cta-input:focus{border-color:var(–accent)}
-        .cta-submit{ padding:16px 32px;border-radius:100px; background:var(–accent);color:var(–bg); font-weight:600;font-size:0.82rem;letter-spacing:0.02em; transition:all .3s var(–ease);white-space:nowrap; }
-        .cta-submit:hover{background:#e0b85e;transform:translateY(-1px)}
+        .featured-section{padding:100px 0;position:relative;z-index:1}
+        .section-header{margin-bottom:60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+        .section-header .display{font-size:clamp(2rem,4vw,3rem);max-width:500px}
+        .section-header .view-all{ font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase; color:var(–text-tertiary);transition:color .3s; }
+        .section-header .view-all:hover{color:var(–accent)}
+        .featured-grid{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+        .featured-main{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px; position:relative;overflow:hidden;min-height:500px; display:flex;flex-direction:column; justify-content:flex-end; transition:all .5s var(–ease); }
+        .featured-main:hover{border-color:var(–border-hover);transform:translateY(-4px)}
+        .featured-main::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
+        .featured-main .f-cat{ font-family:var(–mono);font-size:0.6rem;font-weight:500; letter-spacing:0.1em;text-transform:uppercase; padding:6px 16px;border-radius:100px; display:inline-block;margin-bottom:24px; }
+        .featured-main .f-cat.openclaw{background:var(–emerald-dim);color:var(–emerald)}
+        .featured-main h3{ font-family:var(–serif);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:500; line-height:1.2;margin-bottom:16px;max-width:600px; }
+        .featured-main p{ font-size:0.95rem;color:var(–text-secondary);line-height:1.7;font-weight:300;max-width:480px; }
+        .featured-main .f-meta{ font-family:var(–mono);font-size:0.65rem;color:var(–text-tertiary);margin-top:32px; }
+        .featured-sidebar{display:flex;flex-direction:column;gap:12px}
+        .featured-side-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:28px;flex:1; transition:all .4s var(–ease); }
+        .featured-side-card:hover{border-color:var(–border-hover);transform:translateY(-2px)}
+        .featured-side-card h4{ font-family:var(–serif);font-size:1.1rem;font-weight:500;line-height:1.35;margin-bottom:10px; }
+        .featured-side-card p{ font-size:0.8rem;color:var(–text-secondary);line-height:1.6;font-weight:300; }
+        .featured-side-card .f-meta{ font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary);margin-top:12px; }
+        .news-section{padding:100px 0;position:relative;z-index:1}
+        .news-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+        .news-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .5s var(–ease); display:flex;flex-direction:column; }
+        .news-card:hover{border-color:var(–border-hover);transform:translateY(-4px)}
+        .news-card::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
+        .news-card{position:relative}
+        .news-card .nc-cat{ font-family:var(–mono);font-size:0.55rem;font-weight:500; letter-spacing:0.1em;text-transform:uppercase; padding:4px 12px;border-radius:100px; display:inline-block;margin-bottom:20px; }
+        .news-card .nc-cat.ai{background:var(–accent-dim);color:var(–accent)}
+        .news-card .nc-cat.tech{background:rgba(110,168,254,0.1);color:var(–blue)}
+        .news-card .nc-cat.openclaw{background:var(–emerald-dim);color:var(–emerald)}
+        .news-card .nc-cat.startup{background:rgba(62,232,181,0.1);color:var(–emerald)}
+        .news-card h3{ font-family:var(–serif);font-size:1.2rem;font-weight:500; line-height:1.35;margin-bottom:12px; }
+        .news-card p{ font-size:0.82rem;color:var(–text-secondary);line-height:1.7;font-weight:300;flex:1; }
+        .news-card .nc-meta{ font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary);margin-top:20px; display:flex;justify-content:space-between;align-items:center; }
+        .news-card .read-link{ font-size:0.7rem;font-weight:500;color:var(–accent);letter-spacing:0.05em; }
+        .nc-1{grid-column:span 6}
+        .nc-2{grid-column:span 6}
+        .nc-3{grid-column:span 4}
+        .nc-4{grid-column:span 4}
+        .nc-5{grid-column:span 4}
+        .newsletter-section{ padding:100px 0;position:relative;z-index:1;text-align:center; }
+        .newsletter-box{ background:var(–surface);border:1px solid var(–border); border-radius:28px;padding:80px 48px; position:relative;overflow:hidden; }
+        .newsletter-box::before{ content:'';position:absolute;top:-2px;left:20%;right:20%;height:2px; background:linear-gradient(90deg,transparent,var(–accent),transparent); }
+        .newsletter-box .display{font-size:clamp(2rem,4vw,3rem);max-width:500px;margin:0 auto}
+        .newsletter-box p{color:var(–text-secondary);font-size:0.9rem;font-weight:300;margin-top:16px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.7}
+        .newsletter-input-row{ display:flex;gap:10px;max-width:420px;margin:36px auto 0; }
+        .newsletter-input{ flex:1;padding:16px 24px;border-radius:100px; background:var(–bg);border:1px solid var(–border); color:var(–text);font-family:var(–sans);font-size:0.85rem; outline:none;transition:border-color .3s; }
+        .newsletter-input::placeholder{color:var(–text-tertiary)}
+        .newsletter-input:focus{border-color:var(–accent)}
+        .newsletter-submit{ padding:16px 32px;border-radius:100px; background:var(–accent);color:var(–bg); font-weight:600;font-size:0.82rem;letter-spacing:0.02em; transition:all .3s var(–ease);white-space:nowrap; }
+        .newsletter-submit:hover{background:#e0b85e;transform:translateY(-1px)}
         .footer{border-top:1px solid var(–border);padding:72px 0 40px;position:relative;z-index:1}
         .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
         .footer-brand{font-family:var(–serif);font-size:1.2rem;font-weight:600}
@@ -216,9 +124,9 @@
         .footer-col a{ display:block;font-size:0.82rem;color:var(–text-secondary); margin-bottom:12px;font-weight:300;transition:color .3s; }
         .footer-col a:hover{color:var(–text)}
         .footer-bottom{ display:flex;justify-content:space-between;align-items:center; margin-top:60px;padding-top:24px;border-top:1px solid var(–border); font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary); letter-spacing:0.06em; }
-        @media(max-width:1024px){ .bento{grid-template-columns:repeat(6,1fr)} .bc-1{grid-column:span 6} .bc-2,.bc-3,.bc-4,.bc-5{grid-column:span 3} .bc-1 .b-visual{display:none} }
-        @media(max-width:900px){ .nav{padding:0 28px} .nav-center{display:none} .features-header-row{flex-direction:column;align-items:flex-start} .features-header p{text-align:left} .bento{grid-template-columns:1fr} .bc-1,.bc-2,.bc-3,.bc-4,.bc-5{grid-column:span 1} .stats-ribbon{grid-template-columns:repeat(2,1fr)} .news-item{grid-template-columns:1fr;gap:8px} .news-num{display:none} .news-arrow{display:none} .results-grid{grid-template-columns:1fr} .results-chart-card{grid-column:span 1} .pricing-grid{grid-template-columns:1fr} .test-grid{grid-template-columns:1fr} .faq-layout{grid-template-columns:1fr;gap:40px} .footer-grid{grid-template-columns:1fr 1fr} }
-        @media(max-width:600px){ .nav{padding:0 20px;height:60px} .hero{padding:120px 20px 80px} .hero-actions{flex-direction:column;max-width:320px;margin-left:auto;margin-right:auto} .hero-trust-logos{flex-wrap:wrap;gap:20px;justify-content:center} .stats-ribbon{grid-template-columns:1fr} .cta-input-row{flex-direction:column} .footer-grid{grid-template-columns:1fr} .footer-bottom{flex-direction:column;gap:12px;text-align:center} }
+        @media(max-width:1024px){ .featured-grid{grid-template-columns:1fr} .featured-sidebar{flex-direction:row} .featured-side-card{flex:1} }
+        @media(max-width:900px){ .nav{padding:0 28px} .nav-center{display:none} .featured-sidebar{flex-direction:column} .news-grid{grid-template-columns:1fr} .nc-1,.nc-2,.nc-3,.nc-4,.nc-5{grid-column:span 1} }
+        @media(max-width:600px){ .nav{padding:0 20px;height:60px} .hero{padding:120px 20px 80px} .hero-actions{flex-direction:column;max-width:320px;margin-left:auto;margin-right:auto} .newsletter-input-row{flex-direction:column} .footer-grid{grid-template-columns:1fr} .footer-bottom{flex-direction:column;gap:12px;text-align:center} }
     </style>
 </head>
 <body>
@@ -229,380 +137,161 @@
     </div>
     <!-- NAV -->
     <nav class="nav" id="nav">
-        <div class="nav-brand">
-            <div class="mark">FS</div>
-            Father & Sons Solutions
-        </div>
+        <div class="nav-brand">Father & Sons Solutions</div>
         <div class="nav-center">
-            <a href="#features">Services</a>
-            <a href="#news">News</a>
-            <a href="#results">Results</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#faq">FAQ</a>
+            <a href="#featured">Featured</a>
+            <a href="#news">Latest News</a>
+            <a href="#about">About</a>
         </div>
         <div class="nav-right">
-            <a href="#" class="nav-login">Sign In</a>
-            <button class="btn-nav">Get Started</button>
+            <button class="nav-subscribe">Subscribe</button>
         </div>
     </nav>
     <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
-            <div class="label reveal">OpenClaw & AI Experts</div>
-            <h1 class="display reveal reveal-d1">Automated.<br><em>Scalable.</em>The Future.</h1>
-            <p class="hero-body reveal reveal-d2">We build AI-powered workflows for businesses that want to stay ahead. OpenClaw experts delivering real results — not just tools.</p>
+            <div class="label reveal">AI & Technology News</div>
+            <h1 class="display reveal reveal-d1">Intelligence,<br><em>Delivered.</em></h1>
+            <p class="hero-body reveal reveal-d2">Daily coverage of artificial intelligence, OpenClaw developments, and technology trends. Curated news for professionals who need to stay ahead.</p>
             <div class="hero-actions reveal reveal-d3">
-                <button class="btn-hero-primary"><span>Contact Us</span></button>
-                <button class="btn-hero-secondary">Read News</button>
-            </div>
-            <div class="hero-trust reveal reveal-d4">
-                <div class="hero-trust-label">We build with</div>
-                <div class="hero-trust-logos">
-                    <span>OpenClaw</span><span>NVIDIA</span><span>OpenAI</span><span>Anthropic</span><span>Google</span>
-                </div>
+                <button class="btn-hero-primary"><span>Read Latest News</span></button>
+                <button class="btn-hero-secondary">Subscribe to Newsletter</button>
             </div>
         </div>
     </section>
     <div class="divider"></div>
-    <!-- FEATURES -->
-    <section class="features container" id="features">
-        <div class="features-header reveal">
-            <div class="features-header-row">
-                <div>
-                    <div class="label">Services</div>
-                    <h2 class="display" style="margin-top:20px">Tools that give you <em>the edge</em></h2>
-                </div>
-                <p>OpenClaw-based solutions that deliver results faster and sharper — for those who can't afford to miss anything.</p>
+    <!-- FEATURED -->
+    <section class="featured-section container" id="featured">
+        <div class="section-header reveal">
+            <div>
+                <div class="label">Featured</div>
+                <h2 class="display" style="margin-top:20px">Stories that <em>matter</em></h2>
             </div>
+            <a href="#news" class="view-all">View All News</a>
         </div>
-        <div class="bento">
-            <div class="bento-card bc-1 reveal">
-                <div class="b-icon">⚡</div>
-                <h3>OpenClaw Implementation</h3>
-                <p>Complete AI automation setup for your business. From configuration to production — we take you all the way.</p>
-                <div class="b-visual">
-                    <div class="b-visual-header"><span>Automation — 12 months</span><span style="color:var(--emerald)">↑ 340%</span></div>
-                    <div class="b-visual-bars" id="miniChart"></div>
+        <div class="featured-grid reveal">
+            <div class="featured-main">
+                <span class="f-cat openclaw">OpenClaw</span>
+                <h3>OpenClaw 2026.2.6 Introduces GPT-4o Integration and Enhanced Multimodality</h3>
+                <p>The latest release brings seamless GPT-4o integration, improved workflow performance, and native support for advanced multimodal tasks. Developers now have access to faster processing and lower latency across all major model providers.</p>
+                <div class="f-meta">February 12, 2026 · 8 min read</div>
+            </div>
+            <div class="featured-sidebar">
+                <div class="featured-side-card">
+                    <h4>NVIDIA Blackwell Architecture Sets New Performance Records</h4>
+                    <p>Third-generation GPU architecture delivers triple AI performance with significantly reduced power consumption.</p>
+                    <div class="f-meta">Feb 11, 2026 · 5 min read</div>
                 </div>
-            </div>
-            <div class="bento-card bc-2 reveal reveal-d1">
-                <div class="b-icon">🧠</div>
-                <h3>AI Workflows</h3>
-                <p>Custom automation flows built in OpenClaw. Text, image, data — all in one place.</p>
-            </div>
-            <div class="bento-card bc-3 reveal reveal-d2">
-                <div class="b-icon">📊</div>
-                <h3>Integrations</h3>
-                <p>Connect your systems: APIs, databases, chat services, calendars and more.</p>
-            </div>
-            <div class="bento-card bc-4 reveal reveal-d1">
-                <div class="b-icon">🔔</div>
-                <h3>Consultation</h3>
-                <p>Strategic advice on AI implementation. We guide your technical journey.</p>
-            </div>
-            <div class="bento-card bc-5 reveal reveal-d2">
-                <div class="b-icon">📰</div>
-                <h3>Tech News</h3>
-                <p>Curated coverage of AI, OpenClaw and tech trends. Stay informed.</p>
-            </div>
-        </div>
-        <div class="stats-ribbon reveal" style="margin-top:12px">
-            <div class="stat-pill"><div class="s-val gold">50+</div><div class="s-label">Projects</div></div>
-            <div class="stat-pill"><div class="s-val green">1000h</div><div class="s-label">Automation</div></div>
-            <div class="stat-pill"><div class="s-val blue">99%</div><div class="s-label">Satisfaction</div></div>
-            <div class="stat-pill"><div class="s-val">24/7</div><div class="s-label">Support</div></div>
-        </div>
-    </section>
-    <div class="divider container"></div>
-    <!-- NEWS -->
-    <section class="editorial container" id="news">
-        <div class="editorial-header reveal">
-            <div class="label">Latest News</div>
-            <h2 class="display" style="margin-top:20px">News that <em>shapes the future</em></h2>
-        </div>
-        <div class="news-list">
-            <div class="news-item reveal">
-                <span class="news-num">01</span>
-                <div class="news-content">
-                    <h3>OpenClaw 2026.2.6 — Now with GPT-4o Integration</h3>
-                    <p class="news-excerpt">The latest version offers seamless GPT-4o integration, improved multimodality, and faster workflows.</p>
-                    <div class="news-meta-row"><span class="news-cat openclaw">OpenClaw</span><span class="news-date">Feb 12, 2026 · 3 min</span></div>
-                </div>
-                <span class="news-arrow">→</span>
-            </div>
-            <div class="news-item reveal reveal-d1">
-                <span class="news-num">02</span>
-                <div class="news-content">
-                    <h3>NVIDIA's New Blackwell Architecture Sets Records</h3>
-                    <p class="news-excerpt">Triple AI performance with drastically lower power consumption. Game changer for local AI solutions.</p>
-                    <div class="news-meta-row"><span class="news-cat tech">Tech</span><span class="news-date">Feb 11, 2026 · 5 min</span></div>
-                </div>
-                <span class="news-arrow">→</span>
-            </div>
-            <div class="news-item reveal reveal-d2">
-                <span class="news-num">03</span>
-                <div class="news-content">
-                    <h3>Agentic AI — The Next Step in Automation</h3>
-                    <p class="news-excerpt">Autonomous AI agents that plan and execute complex tasks. What it means for your business.</p>
-                    <div class="news-meta-row"><span class="news-cat ai">AI</span><span class="news-date">Feb 10, 2026 · 6 min</span></div>
-                </div>
-                <span class="news-arrow">→</span>
-            </div>
-            <div class="news-item reveal reveal-d3">
-                <span class="news-num">04</span>
-                <div class="news-content">
-                    <h3>Swedish AI Startup Raises $20M in Series B</h3>
-                    <p class="news-excerpt">Focus on automated medical technology. Now serving customers in 15 countries, targeting IPO 2027.</p>
-                    <div class="news-meta-row"><span class="news-cat startup">Startup</span><span class="news-date">Feb 9, 2026 · 4 min</span></div>
-                </div>
-                <span class="news-arrow">→</span>
-            </div>
-        </div>
-    </section>
-    <div class="divider container"></div>
-    <!-- RESULTS -->
-    <section class="results container" id="results">
-        <div class="results-header reveal">
-            <div class="label">Results</div>
-            <h2 class="display" style="margin-top:20px">Numbers that <em>speak for themselves</em></h2>
-            <p style="font-size:0.9rem;color:var(--text-secondary);font-weight:300;margin-top:12px;max-width:480px;line-height:1.7">From startups to enterprise — businesses trust Father & Sons Solutions for their AI automation.</p>
-        </div>
-        <div class="results-grid reveal">
-            <div class="results-card">
-                <div class="r-val gold">340%</div>
-                <div class="r-desc">Increased automation efficiency for our customers over 12 months</div>
-                <div class="r-glow g1"></div>
-            </div>
-            <div class="results-card">
-                <div class="r-val green">1000+</div>
-                <div class="r-desc">Workflows automated via OpenClaw</div>
-                <div class="r-glow g2"></div>
-            </div>
-            <div class="results-chart-card reveal reveal-d1">
-                <div class="rc-header">
-                    <h4>Monthly Customer Growth</h4>
-                    <span class="rc-badge">↑ 24% this month</span>
-                </div>
-                <div class="chart-area" id="chartArea"></div>
-                <div class="chart-labels" id="chartLabels"></div>
-            </div>
-        </div>
-    </section>
-    <div class="divider container"></div>
-    <!-- PRICING -->
-    <section class="pricing container" id="pricing">
-        <div class="pricing-header reveal">
-            <div class="label" style="justify-content:center">Pricing</div>
-            <h2 class="display" style="margin-top:20px">Choose your <em>level</em></h2>
-            <p>Transparent and flexible. Start simple, scale as you grow.</p>
-        </div>
-        <div class="pricing-grid">
-            <div class="price-card reveal">
-                <div class="p-tier">Consultation</div>
-                <div class="p-amount">$250<span> /hour</span></div>
-                <div class="p-desc">Perfect to get started and map out opportunities.</p>
-                <div class="p-divider"></div>
-                <ul class="p-features">
-                    <li>Strategic review</li>
-                    <li>Technical analysis</li>
-                    <li>High-level roadmap</li>
-                    <li>1 hour session</li>
-                </ul>
-                <button class="p-btn ghost">Book Now</button>
-            </div>
-            <div class="price-card featured reveal reveal-d1">
-                <div class="p-tier">Implementation</div>
-                <div class="p-amount">$2,990<span> /project</span></div>
-                <div class="p-desc">Complete OpenClaw setup for teams that want to get up and running fast.</p>
-                <div class="p-divider"></div>
-                <ul class="p-features">
-                    <li>Complete OpenClaw installation</li>
-                    <li>5 custom workflows</li>
-                    <li>API integrations</li>
-                    <li>Documentation</li>
-                    <li>2 weeks support</li>
-                </ul>
-                <button class="p-btn solid">Start Project</button>
-            </div>
-            <div class="price-card reveal reveal-d2">
-                <div class="p-tier">Retainer</div>
-                <div class="p-amount">$1,500<span> /month</span></div>
-                <div class="p-desc">Ongoing optimization and development for growing needs.</p>
-                <div class="p-divider"></div>
-                <ul class="p-features">
-                    <li>New workflows</li>
-                    <li>Optimization & maintenance</li>
-                    <li>Priority support</li>
-                    <li>Monthly review</li>
-                    <li>Extended integrations</li>
-                </ul>
-                <button class="p-btn ghost">Contact Us</button>
-            </div>
-        </div>
-    </section>
-    <div class="divider container"></div>
-    <!-- TESTIMONIALS -->
-    <section class="testimonials container" id="testimonials">
-        <div class="testimonials-header reveal">
-            <div class="label">Testimonials</div>
-            <h2 class="display" style="margin-top:20px">What clients <em>say</em></h2>
-        </div>
-        <div class="test-grid">
-            <div class="test-card reveal">
-                <div class="test-stars">
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                </div>
-                <p class="test-quote">"Father & Sons Solutions delivered exactly what we needed. Our AI automations now save 20+ hours per week."</p>
-                <div class="test-author">
-                    <div class="test-avatar">EL</div>
-                    <div><div class="test-name">Erik Lindqvist</div><div class="test-role">CTO, Startup Stockholm</div></div>
-                </div>
-            </div>
-            <div class="test-card reveal reveal-d1">
-                <div class="test-stars">
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                </div>
-                <p class="test-quote">"OpenClaw expertise beyond the ordinary. They understood our needs and built solutions that actually work."</p>
-                <div class="test-author">
-                    <div class="test-avatar">AS</div>
-                    <div><div class="test-name">Anna Svensson</div><div class="test-role">CEO, TechGroup AB</div></div>
-                </div>
-            </div>
-            <div class="test-card reveal reveal-d2">
-                <div class="test-stars">
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                    <svg class="star" viewBox="0 0 20 20"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32L2.27 6.69l5.34-.78L10 1z"/></svg>
-                </div>
-                <p class="test-quote">"Best investment we made this year. ROI visible within the first month."</p>
-                <div class="test-author">
-                    <div class="test-avatar">MK</div>
-                    <div><div class="test-name">Marcus Karlsson</div><div class="test-role">COO, Innovate Stockholm</div></div>
+                <div class="featured-side-card">
+                    <h4>Agentic AI: The Next Frontier in Automation</h4>
+                    <p>Autonomous AI agents are beginning to transform how enterprises approach complex workflow automation.</p>
+                    <div class="f-meta">Feb 10, 2026 · 6 min read</div>
                 </div>
             </div>
         </div>
     </section>
     <div class="divider container"></div>
-    <!-- FAQ -->
-    <section class="faq container" id="faq">
-        <div class="faq-layout">
-            <div class="faq-left reveal">
-                <div class="label">FAQ</div>
-                <h2 class="display" style="margin-top:20px">Common <em>questions</em></h2>
-                <p>Can't find the answer? Contact us directly and we'll respond within 24 hours.</p>
+    <!-- LATEST NEWS -->
+    <section class="news-section container" id="news">
+        <div class="section-header reveal">
+            <h2 class="display">Latest <em>News</em></h2>
+        </div>
+        <div class="news-grid">
+            <div class="news-card nc-1 reveal">
+                <span class="nc-cat ai">Artificial Intelligence</span>
+                <h3>Large Language Models Show Unexpected Reasoning Capabilities in New Benchmarks</h3>
+                <p>Recent testing reveals that frontier models are demonstrating reasoning abilities that weren't explicitly trained, suggesting emergent capabilities in advanced architectures.</p>
+                <div class="nc-meta">
+                    <span>February 12, 2026</span>
+                    <span class="read-link">READ MORE</span>
+                </div>
             </div>
-            <div class="faq-list reveal reveal-d1">
-                <div class="faq-item">
-                    <div class="faq-q" onclick="toggleFaq(this)">What makes Father & Sons Solutions unique?<span class="faq-arrow">▾</span></div>
-                    <div class="faq-a"><p>We combine deep OpenClaw expertise with business understanding. We don't just build tools — we deliver measurable results.</p></div>
+            <div class="news-card nc-2 reveal reveal-d1">
+                <span class="nc-cat tech">Technology</span>
+                <h3>Major Cloud Providers Race to Deploy Next-Generation AI Infrastructure</h3>
+                <p>AWS, Google Cloud, and Microsoft Azure are all announcing expanded AI infrastructure capabilities, with new data center investments exceeding $50 billion combined.</p>
+                <div class="nc-meta">
+                    <span>February 11, 2026</span>
+                    <span class="read-link">READ MORE</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-q" onclick="toggleFaq(this)">How long does an implementation take?<span class="faq-arrow">▾</span></div>
-                    <div class="faq-a"><p>Most projects are completed within 2-4 weeks. Complex solutions may take longer. We always give you a realistic timeline during consultation.</p></div>
+            </div>
+            <div class="news-card nc-3 reveal reveal-d2">
+                <span class="nc-cat openclaw">OpenClaw</span>
+                <h3>OpenClaw Ecosystem Grows with New Plugin Architecture</h3>
+                <p>Third-party developers now have standardized tools for building extensions.</p>
+                <div class="nc-meta">
+                    <span>Feb 10, 2026</span>
+                    <span class="read-link">READ</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-q" onclick="toggleFaq(this)">Can you integrate with our existing systems?<span class="faq-arrow">▾</span></div>
-                    <div class="faq-a"><p>Absolutely. We have experience with API integrations, databases, CRMs, chat services and more. We adapt the solution to your needs.</p></div>
+            </div>
+            <div class="news-card nc-4 reveal reveal-d2">
+                <span class="nc-cat startup">Startups</span>
+                <h3>Swedish AI Startup Raises $20M in Series B Funding</h3>
+                <p>Company focuses on automated medical technology solutions.</p>
+                <div class="nc-meta">
+                    <span>Feb 9, 2026</span>
+                    <span class="read-link">READ</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-q" onclick="toggleFaq(this)">Do you offer training?<span class="faq-arrow">▾</span></div>
-                    <div class="faq-a"><p>Yes, every project includes documentation and training for your team. We ensure you can manage the solution yourself.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q" onclick="toggleFaq(this)">Is there a money-back guarantee?<span class="faq-arrow">▾</span></div>
-                    <div class="faq-a"><p>We offer 14-day full refund on consultations. For projects, we only charge after project plan approval.</p></div>
+            </div>
+            <div class="news-card nc-5 reveal reveal-d2">
+                <span class="nc-cat tech">Technology</span>
+                <h3>Quantum Computing Milestone Achieved by Research Team</h3>
+                <p>Error correction advances bring practical quantum computing closer.</p>
+                <div class="nc-meta">
+                    <span>Feb 9, 2026</span>
+                    <span class="read-link">READ</span>
                 </div>
             </div>
         </div>
     </section>
-    <!-- CTA -->
-    <section class="cta-section container">
-        <div class="cta-box reveal">
-            <h2 class="display">Ready to <em>automate</em>?</h2>
-            <p>Book a free consultation and we'll walk you through how OpenClaw can streamline your business.</p>
-            <div class="cta-input-row">
-                <input type="email" class="cta-input" placeholder="your@email.com">
-                <button class="cta-submit">Book Consultation</button>
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section container">
+        <div class="newsletter-box reveal">
+            <h2 class="display">Stay <em>Informed</em></h2>
+            <p>Get the most important AI and technology news delivered to your inbox every morning.</p>
+            <div class="newsletter-input-row">
+                <input type="email" class="newsletter-input" placeholder="your@email.com">
+                <button class="newsletter-submit">Subscribe</button>
             </div>
         </div>
     </section>
     <!-- FOOTER -->
-    <footer class="footer container">
+    <footer class="footer container" id="about">
         <div class="footer-grid">
             <div>
                 <div class="footer-brand">Father & Sons Solutions</div>
-                <p>OpenClaw experts building the future of AI automation. Results that speak for themselves.</p>
+                <p>Curated coverage of artificial intelligence, OpenClaw, and technology trends. News for professionals.</p>
             </div>
             <div class="footer-col">
-                <h5>Services</h5>
-                <a href="#">Implementation</a>
-                <a href="#">Consultation</a>
-                <a href="#">Retainer</a>
-                <a href="#">Training</a>
-            </div>
-            <div class="footer-col">
-                <h5>Resources</h5>
-                <a href="#">AI News</a>
-                <a href="#">OpenClaw Guides</a>
-                <a href="#">Blog</a>
-                <a href="#">Newsletter</a>
+                <h5>Categories</h5>
+                <a href="#">Artificial Intelligence</a>
+                <a href="#">OpenClaw</a>
+                <a href="#">Technology</a>
+                <a href="#">Startups</a>
             </div>
             <div class="footer-col">
                 <h5>Company</h5>
                 <a href="#">About Us</a>
                 <a href="#">Contact</a>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="footer-col">
+                <h5>Connect</h5>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Newsletter</a>
+                <a href="#">RSS Feed</a>
             </div>
         </div>
         <div class="footer-bottom">
             <span>© 2026 Father & Sons Solutions. All rights reserved.</span>
-            <span>Built with OpenClaw</span>
+            <span>News for the AI age</span>
         </div>
     </footer>
     <script>
         const nav=document.getElementById('nav');
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
-        function toggleFaq(el){el.parentElement.classList.toggle('open')}
-        const data=[12,18,15,24,28,35,42,48,55,62,78,95];
-        const mo=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        const mx=Math.max(...data);
-        const ca=document.getElementById('chartArea');
-        const cl=document.getElementById('chartLabels');
-        data.forEach((v,i)=>{
-            const b=document.createElement('div');
-            b.className='c-bar';
-            b.style.height=(v/mx*100)+'%';
-            b.style.background=i>=10 ?'linear-gradient(180deg,var(--accent),rgba(212,168,83,0.15))' :'linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))';
-            b.innerHTML=`<span class="c-tip">${v}</span>`;
-            ca.appendChild(b);
-            const l=document.createElement('span');
-            l.textContent=mo[i];
-            cl.appendChild(l);
-        });
-        const mc=document.getElementById('miniChart');
-        if(mc){
-            const mini=[28,35,42,48,55,62,70,78,85,92,105,118];
-            const mmx=Math.max(...mini);
-            mini.forEach((v,i)=>{
-                const b=document.createElement('div');
-                b.className='b-visual-bar';
-                b.style.height=(v/mmx*100)+'%';
-                if(i>=10)b.style.background='linear-gradient(180deg,var(--accent),rgba(212,168,83,0.2))';
-                else b.style.background='linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))';
-                mc.appendChild(b);
-            });
-        }
         const obs=new IntersectionObserver(entries=>{ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}); },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     </script>
