@@ -71,7 +71,7 @@
         .section-header .view-all{ font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase; color:var(–text-tertiary);transition:color .3s; }
         .section-header .view-all:hover{color:var(–accent)}
         .featured-grid{display:grid;grid-template-columns:2fr 1fr;gap:12px}
-        .featured-main{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px; position:relative;overflow:hidden;min-height:500px; display:flex;flex-direction:column; justify-content:flex-end; transition:all .5s var(–ease); }
+        .featured-main{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px; position:relative;overflow:hidden;min-height:500px; display:flex;flex-direction:column; justify-content:flex-end; cursor:pointer; transition:all .5s var(–ease); text-decoration:none;color:inherit; }
         .featured-main:hover{border-color:var(–border-hover);transform:translateY(-4px)}
         .featured-main::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
         .featured-main .f-cat{ font-family:var(–mono);font-size:0.6rem;font-weight:500; letter-spacing:0.1em;text-transform:uppercase; padding:6px 16px;border-radius:100px; display:inline-block;margin-bottom:24px; }
@@ -80,14 +80,16 @@
         .featured-main p{ font-size:0.95rem;color:var(–text-secondary);line-height:1.7;font-weight:300;max-width:480px; }
         .featured-main .f-meta{ font-family:var(–mono);font-size:0.65rem;color:var(–text-tertiary);margin-top:32px; }
         .featured-sidebar{display:flex;flex-direction:column;gap:12px}
-        .featured-side-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:28px;flex:1; transition:all .4s var(–ease); }
+        .featured-side-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:28px;flex:1; cursor:pointer; transition:all .4s var(–ease); text-decoration:none;color:inherit;display:flex;flex-direction:column; }
         .featured-side-card:hover{border-color:var(–border-hover);transform:translateY(-2px)}
         .featured-side-card h4{ font-family:var(–serif);font-size:1.1rem;font-weight:500;line-height:1.35;margin-bottom:10px; }
-        .featured-side-card p{ font-size:0.8rem;color:var(–text-secondary);line-height:1.6;font-weight:300; }
+        .featured-side-card p{ font-size:0.8rem;color:var(–text-secondary);line-height:1.6;font-weight:300;flex:1; }
         .featured-side-card .f-meta{ font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary);margin-top:12px; }
         .news-section{padding:100px 0;position:relative;z-index:1}
+        .section-title{ margin-bottom:48px; }
+        .section-title .display{font-size:clamp(2rem,4vw,3rem); }
         .news-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-        .news-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .5s var(–ease); display:flex;flex-direction:column; }
+        .news-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .5s var(–ease); display:flex;flex-direction:column; cursor:pointer; text-decoration:none;color:inherit; }
         .news-card:hover{border-color:var(–border-hover);transform:translateY(-4px)}
         .news-card::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
         .news-card{position:relative}
@@ -135,7 +137,6 @@
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
-    <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="nav-brand">Father & Sons Solutions</div>
         <div class="nav-center">
@@ -147,7 +148,6 @@
             <button class="nav-subscribe">Subscribe</button>
         </div>
     </nav>
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
             <div class="label reveal">AI & Technology News</div>
@@ -160,7 +160,6 @@
         </div>
     </section>
     <div class="divider"></div>
-    <!-- FEATURED -->
     <section class="featured-section container" id="featured">
         <div class="section-header reveal">
             <div>
@@ -170,81 +169,79 @@
             <a href="#news" class="view-all">View All News</a>
         </div>
         <div class="featured-grid reveal">
-            <div class="featured-main">
+            <a href="openclaw-2026-2-6.html" class="featured-main">
                 <span class="f-cat openclaw">OpenClaw</span>
                 <h3>OpenClaw 2026.2.6 Introduces GPT-4o Integration and Enhanced Multimodality</h3>
                 <p>The latest release brings seamless GPT-4o integration, improved workflow performance, and native support for advanced multimodal tasks. Developers now have access to faster processing and lower latency across all major model providers.</p>
                 <div class="f-meta">February 12, 2026 · 8 min read</div>
-            </div>
+            </a>
             <div class="featured-sidebar">
-                <div class="featured-side-card">
+                <a href="nvidia-blackwell-2026.html" class="featured-side-card">
                     <h4>NVIDIA Blackwell Architecture Sets New Performance Records</h4>
-                    <p>Third-generation GPU architecture delivers triple AI performance with significantly reduced power consumption.</p>
+                    <p>Third-generation GPU architecture delivers triple AI performance with significantly reduced power consumption, enabling new possibilities for on-premise AI deployments.</p>
                     <div class="f-meta">Feb 11, 2026 · 5 min read</div>
-                </div>
-                <div class="featured-side-card">
+                </a>
+                <a href="agentic-ai-automation.html" class="featured-side-card">
                     <h4>Agentic AI: The Next Frontier in Automation</h4>
-                    <p>Autonomous AI agents are beginning to transform how enterprises approach complex workflow automation.</p>
+                    <p>Autonomous AI agents are beginning to transform how enterprises approach complex workflow automation, moving beyond simple task completion to end-to-end process management.</p>
                     <div class="f-meta">Feb 10, 2026 · 6 min read</div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
     <div class="divider container"></div>
-    <!-- LATEST NEWS -->
     <section class="news-section container" id="news">
-        <div class="section-header reveal">
+        <div class="section-title reveal">
             <h2 class="display">Latest <em>News</em></h2>
         </div>
         <div class="news-grid">
-            <div class="news-card nc-1 reveal">
+            <a href="llm-reasoning-capabilities.html" class="news-card nc-1 reveal">
                 <span class="nc-cat ai">Artificial Intelligence</span>
                 <h3>Large Language Models Show Unexpected Reasoning Capabilities in New Benchmarks</h3>
-                <p>Recent testing reveals that frontier models are demonstrating reasoning abilities that weren't explicitly trained, suggesting emergent capabilities in advanced architectures.</p>
+                <p>Recent testing reveals that frontier models are demonstrating reasoning abilities that weren't explicitly trained, suggesting emergent capabilities in advanced architectures that challenge our understanding of AI learning.</p>
                 <div class="nc-meta">
                     <span>February 12, 2026</span>
                     <span class="read-link">READ MORE</span>
                 </div>
-            </div>
-            <div class="news-card nc-2 reveal reveal-d1">
+            </a>
+            <a href="cloud-ai-infrastructure.html" class="news-card nc-2 reveal reveal-d1">
                 <span class="nc-cat tech">Technology</span>
                 <h3>Major Cloud Providers Race to Deploy Next-Generation AI Infrastructure</h3>
-                <p>AWS, Google Cloud, and Microsoft Azure are all announcing expanded AI infrastructure capabilities, with new data center investments exceeding $50 billion combined.</p>
+                <p>AWS, Google Cloud, and Microsoft Azure are all announcing expanded AI infrastructure capabilities, with new data center investments exceeding $50 billion combined for 2026.</p>
                 <div class="nc-meta">
                     <span>February 11, 2026</span>
                     <span class="read-link">READ MORE</span>
                 </div>
-            </div>
-            <div class="news-card nc-3 reveal reveal-d2">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw Ecosystem Grows with New Plugin Architecture</h3>
-                <p>Third-party developers now have standardized tools for building extensions.</p>
+            </a>
+            <a href="swedish-ai-startup-funding.html" class="news-card nc-3 reveal reveal-d2">
+                <span class="nc-cat startup">Startups</span>
+                <h3>Swedish AI Startup Raises $20M in Series B Funding</h3>
+                <p>Company focuses on automated medical technology solutions and plans expansion across European markets.</p>
                 <div class="nc-meta">
                     <span>Feb 10, 2026</span>
                     <span class="read-link">READ</span>
                 </div>
-            </div>
-            <div class="news-card nc-4 reveal reveal-d2">
-                <span class="nc-cat startup">Startups</span>
-                <h3>Swedish AI Startup Raises $20M in Series B Funding</h3>
-                <p>Company focuses on automated medical technology solutions.</p>
+            </a>
+            <a href="openclaw-plugin-architecture.html" class="news-card nc-4 reveal reveal-d2">
+                <span class="nc-cat openclaw">OpenClaw</span>
+                <h3>OpenClaw Ecosystem Grows with New Plugin Architecture</h3>
+                <p>Third-party developers now have standardized tools for building extensions across the platform.</p>
                 <div class="nc-meta">
                     <span>Feb 9, 2026</span>
                     <span class="read-link">READ</span>
                 </div>
-            </div>
-            <div class="news-card nc-5 reveal reveal-d2">
+            </a>
+            <a href="quantum-computing-milestone.html" class="news-card nc-5 reveal reveal-d2">
                 <span class="nc-cat tech">Technology</span>
                 <h3>Quantum Computing Milestone Achieved by Research Team</h3>
-                <p>Error correction advances bring practical quantum computing closer.</p>
+                <p>Error correction advances bring practical quantum computing closer to reality for certain workloads.</p>
                 <div class="nc-meta">
                     <span>Feb 9, 2026</span>
                     <span class="read-link">READ</span>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
-    <!-- NEWSLETTER -->
     <section class="newsletter-section container">
         <div class="newsletter-box reveal">
             <h2 class="display">Stay <em>Informed</em></h2>
@@ -255,7 +252,6 @@
             </div>
         </div>
     </section>
-    <!-- FOOTER -->
     <footer class="footer container" id="about">
         <div class="footer-grid">
             <div>
