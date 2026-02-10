@@ -71,7 +71,7 @@
         .section-header .view-all{ font-size:0.75rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase; color:var(–text-tertiary);transition:color .3s; }
         .section-header .view-all:hover{color:var(–accent)}
         .featured-grid{display:grid;grid-template-columns:2fr 1fr;gap:12px}
-        .featured-main{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px; position:relative;overflow:hidden;min-height:500px; display:flex;flex-direction:column; justify-content:flex-end; cursor:pointer; transition:all .5s var(–ease); text-decoration:none;color:inherit; }
+        .featured-main{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:48px; position:relative;overflow:hidden;min-height:500px; display:flex;flex-direction:column; justify-content:flex-end; transition:all .5s var(–ease); }
         .featured-main:hover{border-color:var(–border-hover);transform:translateY(-4px)}
         .featured-main::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
         .featured-main .f-cat{ font-family:var(–mono);font-size:0.6rem;font-weight:500; letter-spacing:0.1em;text-transform:uppercase; padding:6px 16px;border-radius:100px; display:inline-block;margin-bottom:24px; }
@@ -80,16 +80,14 @@
         .featured-main p{ font-size:0.95rem;color:var(–text-secondary);line-height:1.7;font-weight:300;max-width:480px; }
         .featured-main .f-meta{ font-family:var(–mono);font-size:0.65rem;color:var(–text-tertiary);margin-top:32px; }
         .featured-sidebar{display:flex;flex-direction:column;gap:12px}
-        .featured-side-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:28px;flex:1; cursor:pointer; transition:all .4s var(–ease); text-decoration:none;color:inherit;display:flex;flex-direction:column; }
+        .featured-side-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:28px;flex:1; transition:all .4s var(–ease); }
         .featured-side-card:hover{border-color:var(–border-hover);transform:translateY(-2px)}
         .featured-side-card h4{ font-family:var(–serif);font-size:1.1rem;font-weight:500;line-height:1.35;margin-bottom:10px; }
-        .featured-side-card p{ font-size:0.8rem;color:var(–text-secondary);line-height:1.6;font-weight:300;flex:1; }
+        .featured-side-card p{ font-size:0.8rem;color:var(–text-secondary);line-height:1.6;font-weight:300; }
         .featured-side-card .f-meta{ font-family:var(–mono);font-size:0.6rem;color:var(–text-tertiary);margin-top:12px; }
         .news-section{padding:100px 0;position:relative;z-index:1}
-        .section-title{ margin-bottom:48px; }
-        .section-title .display{font-size:clamp(2rem,4vw,3rem); }
         .news-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
-        .news-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .5s var(–ease); display:flex;flex-direction:column; cursor:pointer; text-decoration:none;color:inherit; }
+        .news-card{ background:var(–surface);border:1px solid var(–border); border-radius:20px;padding:36px; transition:all .5s var(–ease); display:flex;flex-direction:column; }
         .news-card:hover{border-color:var(–border-hover);transform:translateY(-4px)}
         .news-card::before{ content:'';position:absolute;top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),transparent); }
         .news-card{position:relative}
@@ -137,6 +135,7 @@
         <div class="orb orb-2"></div>
         <div class="orb orb-3"></div>
     </div>
+    <!-- NAV -->
     <nav class="nav" id="nav">
         <div class="nav-brand">Father & Sons Solutions</div>
         <div class="nav-center">
@@ -148,6 +147,7 @@
             <button class="nav-subscribe">Subscribe</button>
         </div>
     </nav>
+    <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
             <div class="label reveal">AI & Technology News</div>
@@ -160,6 +160,7 @@
         </div>
     </section>
     <div class="divider"></div>
+    <!-- FEATURED -->
     <section class="featured-section container" id="featured">
         <div class="section-header reveal">
             <div>
@@ -169,79 +170,81 @@
             <a href="#news" class="view-all">View All News</a>
         </div>
         <div class="featured-grid reveal">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.2.9" class="featured-main" target="_blank">
+            <div class="featured-main">
                 <span class="f-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw 2026.2.9 Released</h3>
-                <p>Latest release brings iOS alpha node app with setup-code onboarding, comprehensive BlueBubbles channel cleanup, and numerous improvements across the platform.</p>
-                <div class="f-meta">February 9, 2026 · 5 min read</div>
-            </a>
+                <h3>OpenClaw Adds VirusTotal Scanning to AI Agent Marketplace</h3>
+                <p>Following reports of hundreds of malicious skills circulating undetected, OpenClaw has strengthened its security by integrating VirusTotal scanning into its ClawHub marketplace. The partnership aims to curb the spread of malicious AI agent skills through automated SHA-256 hashing and Code Insight analysis of all submitted skills.</p>
+                <div class="f-meta">February 10, 2026 · eSecurity Planet · 6 min read</div>
+            </div>
             <div class="featured-sidebar">
-                <a href="https://news.ycombinator.com/item?id=46954920" class="featured-side-card" target="_blank">
-                    <h4>Frontier AI Agents Violate Ethical Constraints 30-50% of Time</h4>
-                    <p>Research shows that when pressured by KPIs, autonomous AI agents often bypass safety guidelines. The study has sparked debate about AI governance.</p>
-                    <div class="f-meta">Feb 10, 2026 · HN Discussion</div>
-                </a>
-                <a href="https://news.ycombinator.com/item?id=46945663" class="featured-side-card" target="_blank">
-                    <h4>Discord to Require Face Scan or ID for Full Access</h4>
-                    <p>Discord announces new verification requirements starting next month, citing safety concerns. The policy change has drawn mixed reactions from users.</p>
-                    <div class="f-meta">Feb 10, 2026 · HN Discussion</div>
-                </a>
+                <div class="featured-side-card">
+                    <h4>Bitsight Research: 30,000+ Exposed OpenClaw Instances Found</h4>
+                    <p>Security researchers discovered over 30,000 exposed OpenClaw instances in just one analysis period, raising concerns about the rapid adoption of AI agents.</p>
+                    <div class="f-meta">Feb 9, 2026 · Bitsight · 4 min read</div>
+                </div>
+                <div class="featured-side-card">
+                    <h4>The OpenClaw Security Disaster: What Happens When 100K GitHub Stars Meet Open Internet</h4>
+                    <p>Analysis of the security implications when a personal AI agent with deep system access becomes the fastest growing AI tool in recent memory.</p>
+                    <div class="f-meta">Feb 8, 2026 · Reddit/Hacker News · 8 min read</div>
+                </div>
             </div>
         </div>
     </section>
     <div class="divider container"></div>
+    <!-- LATEST NEWS -->
     <section class="news-section container" id="news">
-        <div class="section-title reveal">
+        <div class="section-header reveal">
             <h2 class="display">Latest <em>News</em></h2>
         </div>
         <div class="news-grid">
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.2.6" class="news-card nc-1 reveal" target="_blank">
+            <div class="news-card nc-1 reveal">
                 <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw 2026.2.6: Anthropic Opus 4.6 and OpenAI Codex Support</h3>
-                <p>New release adds support for Anthropic Opus 4.6 and OpenAI Codex gpt-5.3-codex with forward-compat fallbacks. Telegram bot handlers fully typed with Grammy.</p>
+                <h3>OpenClaw Explained: The Good, The Bad, and The Ugly</h3>
+                <p>A comprehensive analysis of OpenClaw's rise from Clawdbot to Moltbot to OpenClaw, examining why it became the most viral AI project since GPT-4 and the security concerns that followed its rapid adoption.</p>
                 <div class="nc-meta">
-                    <span>February 7, 2026</span>
-                    <span class="read-link">READ MORE</span>
+                    <span>February 10, 2026</span>
+                    <a href="https://www.androidheadlines.com/2026/02/openclaw-explained-ai-agent-security-risks-moltbot-clawdbot-features.html" class="read-link" target="_blank">READ MORE</a>
                 </div>
-            </a>
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.2.3" class="news-card nc-2 reveal reveal-d1" target="_blank">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw 2026.2.3: Telegram Bot Handler Improvements</h3>
-                <p>Latest update removes remaining @ts-nocheck from bot-handlers.ts, uses Grammy types directly, and deduplicates StickerMetadata.</p>
-                <div class="nc-meta">
-                    <span>February 5, 2026</span>
-                    <span class="read-link">READ MORE</span>
-                </div>
-            </a>
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.2.2" class="news-card nc-3 reveal reveal-d2" target="_blank">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw 2026.2.2: Feishu/Lark Plugin and Agents Dashboard</h3>
-                <p>New Feishu/Lark plugin support added with documentation. Web UI now includes Agents dashboard for managing agents and subagents.</p>
-                <div class="nc-meta">
-                    <span>February 4, 2026</span>
-                    <span class="read-link">READ</span>
-                </div>
-            </a>
-            <a href="https://news.ycombinator.com/item?id=46958231" class="news-card nc-4 reveal reveal-d2" target="_blank">
+            </div>
+            <div class="news-card nc-2 reveal reveal-d1">
                 <span class="nc-cat tech">Technology</span>
-                <h3>Clean-Room Half-Life 2 Implementation on Quake 1 Engine</h3>
-                <p>Developer creates impressive reverse-engineered port running Half-Life 2 code on Quake 1 engine infrastructure.</p>
+                <h3>CNBC Coverage: From Clawdbot to OpenClaw - Meet the AI Agent Generating Buzz and Fear Globally</h3>
+                <p>Major media outlets examine how OpenClaw's persistent memory and autonomous task execution are reshaping expectations around personal AI assistants while raising important questions about security.</p>
+                <div class="nc-meta">
+                    <span>February 9, 2026</span>
+                    <a href="https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html" class="read-link" target="_blank">READ MORE</a>
+                </div>
+            </div>
+            <div class="news-card nc-3 reveal reveal-d2">
+                <span class="nc-cat ai">Artificial Intelligence</span>
+                <h3>What is OpenClaw? Your Open-Source AI Assistant for 2026</h3>
+                <p>DigitalOcean breaks down the features and setup process for OpenClaw, explaining why local-first AI agents are gaining traction.</p>
+                <div class="nc-meta">
+                    <span>Feb 8, 2026</span>
+                    <a href="https://www.digitalocean.com/resources/articles/what-is-openclaw" class="read-link" target="_blank">READ</a>
+                </div>
+            </div>
+            <div class="news-card nc-4 reveal reveal-d2">
+                <span class="nc-cat tech">Technology</span>
+                <h3>OpenClaw on Wikipedia: Official Entry Created</h3>
+                <p>The open-source AI agent now has its own Wikipedia page, documenting its journey from Clawdbot through Moltbot to OpenClaw.</p>
                 <div class="nc-meta">
                     <span>Feb 10, 2026</span>
-                    <span class="read-link">READ</span>
+                    <a href="https://en.wikipedia.org/wiki/OpenClaw" class="read-link" target="_blank">READ</a>
                 </div>
-            </a>
-            <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.2.1" class="news-card nc-5 reveal reveal-d2" target="_blank">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>OpenClaw 2026.2.1: Documentation Overhaul</h3>
-                <p>Comprehensive documentation updates including onboarding, installation, i18n, exec-approvals, Control UI, and cache retention guides.</p>
+            </div>
+            <div class="news-card nc-5 reveal reveal-d2">
+                <span class="nc-cat ai">Artificial Intelligence</span>
+                <h3>OpenClaw Tutorial Videos Proliferate on YouTube</h3>
+                <p>Educational content about OpenClaw setup and usage has exploded, with multiple creators producing comprehensive tutorials for beginners.</p>
                 <div class="nc-meta">
-                    <span>Feb 2, 2026</span>
-                    <span class="read-link">READ</span>
+                    <span>Feb 7, 2026</span>
+                    <a href="https://www.youtube.com/watch?v=bSiMSSeno9g" class="read-link" target="_blank">READ</a>
                 </div>
-            </a>
+            </div>
         </div>
     </section>
+    <!-- NEWSLETTER -->
     <section class="newsletter-section container">
         <div class="newsletter-box reveal">
             <h2 class="display">Stay <em>Informed</em></h2>
@@ -252,6 +255,7 @@
             </div>
         </div>
     </section>
+    <!-- FOOTER -->
     <footer class="footer container" id="about">
         <div class="footer-grid">
             <div>
