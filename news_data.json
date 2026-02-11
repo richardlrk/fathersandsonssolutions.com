@@ -1,0 +1,69 @@
+{
+  "last_updated": "2026-02-10T15:20:30.167028",
+  "articles": [
+    {
+      "title": "openclaw 2026.2.9",
+      "excerpt": "\n### Added\n\n- iOS: alpha node app + setup-code onboarding. (#11756) Thanks @mbelinky.\n- Channels: comprehensive BlueBubbles and channel cleanup. (#110...",
+      "category": "openclaw",
+      "date": "2026-02-09",
+      "read_time": 5,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.9"
+    },
+    {
+      "title": "openclaw 2026.2.6",
+      "excerpt": "### Changes\r\n\r\n- Models: support Anthropic Opus 4.6 and OpenAI Codex gpt-5.3-codex (forward-compat fallbacks). (#9853, #10720, #9995) Thanks @TinyTb, ...",
+      "category": "openclaw",
+      "date": "2026-02-07",
+      "read_time": 5,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.6"
+    },
+    {
+      "title": "openclaw 2026.2.3",
+      "excerpt": "### Changes\n\n- Telegram: remove last `@ts-nocheck` from `bot-handlers.ts`, use Grammy types directly, deduplicate `StickerMetadata`. Zero `@ts-nocheck...",
+      "category": "openclaw",
+      "date": "2026-02-05",
+      "read_time": 5,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.3"
+    },
+    {
+      "title": "openclaw 2026.2.2",
+      "excerpt": "\n### Changes\n\n- Feishu: add Feishu/Lark plugin support + docs. (#7313) Thanks @jiulingyun (openclaw-cn).\n- Web UI: add Agents dashboard for managing a...",
+      "category": "openclaw",
+      "date": "2026-02-04",
+      "read_time": 5,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.2"
+    },
+    {
+      "title": "openclaw 2026.2.1",
+      "excerpt": "\n### Changes\n\n- Docs: onboarding/install/i18n/exec-approvals/Control UI/exe.dev/cacheRetention updates + misc nav/typos. (#3050, #3461, #4064, #4675, ...",
+      "category": "openclaw",
+      "date": "2026-02-02",
+      "read_time": 5,
+      "url": "https://github.com/openclaw/openclaw/releases/tag/v2026.2.1"
+    },
+    {
+      "title": "Clean-room implementation of Half-Life 2 on the Quake 1 engine",
+      "excerpt": "HN discussion with 11 comments...",
+      "category": "tech",
+      "date": "2026-02-10",
+      "read_time": 5,
+      "url": "https://news.ycombinator.com/item?id=46958231"
+    },
+    {
+      "title": "Frontier AI agents violate ethical constraints 30\u201350% of time, pressured by KPIs",
+      "excerpt": "HN discussion with 269 comments...",
+      "category": "tech",
+      "date": "2026-02-10",
+      "read_time": 5,
+      "url": "https://news.ycombinator.com/item?id=46954920"
+    },
+    {
+      "title": "Discord will require a face scan or ID for full access next month",
+      "excerpt": "HN discussion with 1776 comments...",
+      "category": "tech",
+      "date": "2026-02-10",
+      "read_time": 5,
+      "url": "https://news.ycombinator.com/item?id=46945663"
+    }
+  ]
+}

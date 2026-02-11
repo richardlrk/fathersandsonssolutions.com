@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "last_updated": "2026-02-10T16:45:00Z",
+    "source": "DuckDuckGo News Search",
+    "total_articles": 3
+  },
+  "articles": [
+    {
+      "id": "openclaw-ai-agents-explained",
+      "title": "OpenClaw Opens the Gates for AI Agents—Here's What's Real and What's Not",
+      "slug": "openclaw-ai-agents-explained",
+      "category": "openclaw",
+      "date": "2026-02-06",
+      "read_time": 8,
+      "summary": "OpenClaw hit 147,000 GitHub stars in weeks, spawning an entire ecosystem of AI agents. We separate the proven features from the speculative potential.",
+      "excerpt": "OpenClaw has become the fastest-growing open-source project of 2026. But what's driving this explosive growth, and what should developers know before diving in?",
+      "tags": ["openclaw", "ai-agents", "automation", "github"],
+      "featured": true,
+      "url": "/articles/openclaw-ai-agents-explained.md"
+    },
+    {
+      "id": "ai-regulation-2026",
+      "title": "The AI Regulation Landscape for 2026: What Legal and Compliance Leaders Need to Know",
+      "slug": "ai-regulation-2026-landscape",
+      "category": "ai",
+      "date": "2026-02-10",
+      "read_time": 6,
+      "summary": "Artificial intelligence regulation is evolving rapidly. 2026 marks the transition to enforceable frameworks with real consequences for non-compliance.",
+      "excerpt": "Organizations deploying AI face an increasingly complex regulatory environment. Understanding these changes isn't optional—it's essential for business continuity.",
+      "tags": ["ai", "regulation", "compliance", "policy"],
+      "featured": false,
+      "url": "/articles/ai-regulation-2026.md"
+    },
+    {
+      "id": "fintech-funding-2026",
+      "title": "Startup Funding News 2026: FinTech Investment Shows Strong Momentum",
+      "slug": "fintech-funding-2026",
+      "category": "startup",
+      "date": "2026-02-10",
+      "read_time": 5,
+      "summary": "2026 is shaping up to be a strong year for FinTech, with investment showing real promise across seed to Series C stages.",
+      "excerpt": "After a period of cautious investment, venture capital is flowing back into financial technology startups with a focus on sustainable growth.",
+      "tags": ["fintech", "funding", "venture-capital", "investment"],
+      "featured": false,
+      "url": "/articles/fintech-funding-2026.md"
+    }
+  ]
+}
