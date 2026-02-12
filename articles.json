@@ -1,10 +1,62 @@
 {
   "meta": {
-    "last_updated": "2026-02-10T16:45:00Z",
-    "source": "DuckDuckGo News Search",
-    "total_articles": 3
+    "last_updated": "2026-02-11T23:52:00Z",
+    "source": "Father & Sons Tech Daily Scraper",
+    "total_articles": 7
   },
   "articles": [
+    {
+      "id": "openclaw-2026-2-6-whats-new",
+      "title": "OpenClaw 2026.2.6-3: What's New in AI Automation",
+      "slug": "openclaw-2026-2-6-whats-new",
+      "category": "openclaw",
+      "date": "2026-02-11",
+      "read_time": 5,
+      "summary": "Discover the latest updates in OpenClaw 2026.2.6-3 featuring improved plugin system and enhanced AI model integration.",
+      "excerpt": "OpenClaw continues to push the boundaries of AI automation with its latest release. Version 2026.2.6-3 introduces significant improvements in workflow automation.",
+      "tags": ["openclaw", "automation", "ai", "update"],
+      "featured": true,
+      "url": "/articles/openclaw-2026-2-6.html"
+    },
+    {
+      "id": "open-source-ai-models-2026",
+      "title": "Open Source AI Models Gain Ground",
+      "slug": "open-source-ai-models-2026",
+      "category": "ai",
+      "date": "2026-02-11",
+      "read_time": 10,
+      "summary": "The growing ecosystem of open AI alternatives challenges proprietary solutions.",
+      "excerpt": "The AI landscape continues to evolve rapidly with open source models gaining significant traction across industries.",
+      "tags": ["ai", "open-source", "machine-learning", "trends"],
+      "featured": false,
+      "url": "/articles/open-source-ai-models-gain-ground.html"
+    },
+    {
+      "id": "local-first-ai-privacy",
+      "title": "Local-First AI: Privacy Meets Performance",
+      "slug": "local-first-ai-privacy",
+      "category": "tech",
+      "date": "2026-02-11",
+      "read_time": 4,
+      "summary": "Running AI models on your own machine for maximum privacy and control.",
+      "excerpt": "Local-first AI is emerging as a compelling alternative to cloud-based solutions, offering privacy and performance without compromises.",
+      "tags": ["ai", "privacy", "local", "performance"],
+      "featured": false,
+      "url": "/articles/local-first-ai-privacy.html"
+    },
+    {
+      "id": "autonomous-ai-agents-rise-2025",
+      "title": "The Rise of Autonomous AI Agents in 2025",
+      "slug": "autonomous-ai-agents-rise-2025",
+      "category": "ai",
+      "date": "2026-02-11",
+      "read_time": 6,
+      "summary": "Autonomous agents completing complex tasks are transforming how businesses operate.",
+      "excerpt": "2025 marks the year autonomous AI agents moved from experimental to practical applications.",
+      "tags": ["ai-agents", "automation", "trends"],
+      "featured": false,
+      "url": "/articles/autonomous-ai-agents-2025.html"
+    },
     {
       "id": "openclaw-ai-agents-explained",
       "title": "OpenClaw Opens the Gates for AI Agents—Here's What's Real and What's Not",

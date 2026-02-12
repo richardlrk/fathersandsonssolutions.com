@@ -196,51 +196,11 @@
         <div class="section-header reveal">
             <h2 class="display">Latest <em>News</em></h2>
         </div>
-        <div class="news-grid">
-            <div class="news-card nc-1 reveal">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>What Security Teams Need to Know About OpenClaw AI Super Agent</h3>
-                <p>Security experts analyze the implications of autonomous AI agents for enterprise security governance and monitoring frameworks.</p>
-                <div class="nc-meta">
-                    <span>February 10, 2026</span>
-                    <span class="read-link">READ MORE</span>
-                </div>
+        <div class="news-grid" id="news-container">
             </div>
-            <div class="news-card nc-2 reveal reveal-d1">
-                <span class="nc-cat startup">Startups</span>
-                <h3>Global VC Investment Surged in January 2026</h3>
-                <p>Venture capital investment showed strong momentum in January 2026, with AI companies capturing significant share of total funding.</p>
-                <div class="nc-meta">
-                    <span>February 10, 2026</span>
-                    <span class="read-link">READ MORE</span>
-                </div>
             </div>
-            <div class="news-card nc-3 reveal reveal-d2">
-                <span class="nc-cat openclaw">OpenClaw</span>
-                <h3>What is OpenClaw: Open-Source AI Agent in 2026</h3>
-                <p>A comprehensive guide to OpenClaw's features, setup, and capabilities for enterprise automation.</p>
-                <div class="nc-meta">
-                    <span>Feb 9, 2026</span>
-                    <span class="read-link">READ</span>
-                </div>
             </div>
-            <div class="news-card nc-4 reveal reveal-d2">
-                <span class="nc-cat startup">Startups</span>
-                <h3>85 Hottest AI Startups to Watch in 2026</h3>
-                <p>Analysis of the most promising AI startups by valuation, funding, and growth potential.</p>
-                <div class="nc-meta">
-                    <span>Feb 8, 2026</span>
-                    <span class="read-link">READ</span>
-                </div>
             </div>
-            <div class="news-card nc-5 reveal reveal-d2">
-                <span class="nc-cat tech">Technology</span>
-                <h3>30 Top Tech Startups in 2026</h3>
-                <p>From AI to robotics, the technology startups that are raising billions and changing industries.</p>
-                <div class="nc-meta">
-                    <span>Feb 7, 2026</span>
-                    <span class="read-link">READ</span>
-                </div>
             </div>
         </div>
     </section>
@@ -294,6 +254,51 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(entries=>{ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}); },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// Load articles dynamically
+async function loadArticles() {
+  try {
+    const response = await fetch('articles.json');
+    const data = await response.json();
+    const container = document.getElementById('news-container');
+    
+    // Clear hardcoded articles
+    container.innerHTML = '';
+    
+    // Sort articles by date (newest first)
+    const sortedArticles = data.articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    // Display up to 6 articles
+    sortedArticles.slice(0, 6).forEach((article, index) => {
+      const delay = index > 0 ? `reveal-d${index}` : '';
+      const categoryClass = article.category === 'openclaw' ? 'openclaw' : 
+                           article.category === 'ai' ? 'ai' : 
+                           article.category === 'startup' ? 'startup' : 'tech';
+      
+      const card = document.createElement('div');
+      card.className = `news-card reveal ${delay}`;
+      card.innerHTML = `
+        <span class="nc-cat ${categoryClass}">${article.category.toUpperCase()}</span>
+        <h3>${article.title}</h3>
+        <p>${article.summary}</p>
+        <div class="nc-meta">
+          <span>${new Date(article.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+          <span class="read-link"><a href="${article.url}" style="color:inherit">READ MORE</a></span>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+    
+    // Re-observe new elements
+    container.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    
+  } catch (error) {
+    console.error('Error loading articles:', error);
+  }
+}
+
+// Load articles on page load
+loadArticles();
     </script>
 </body>
 </html>
