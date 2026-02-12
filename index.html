@@ -196,13 +196,7 @@
         <div class="section-header reveal">
             <h2 class="display">Latest <em>News</em></h2>
         </div>
-        <div class="news-grid" id="news-container">
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </div>
+        <div class="news-grid" id="news-container"></div>
     </section>
     <!-- NEWSLETTER -->
     <section class="newsletter-section container">
@@ -254,6 +248,48 @@
         window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)});
         const obs=new IntersectionObserver(entries=>{ entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}); },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
         document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+// Load articles dynamically
+async function loadArticles() {
+  try {
+    const response = await fetch('articles.json');
+    const data = await response.json();
+    const container = document.getElementById('news-container');
+    
+    // Sort articles by date (newest first)
+    const sortedArticles = data.articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    // Display up to 6 articles
+    sortedArticles.slice(0, 6).forEach((article, index) => {
+      const delay = index > 0 ? `reveal-d${index}` : '';
+      const categoryClass = article.category === 'openclaw' ? 'openclaw' : 
+                           article.category === 'ai' ? 'ai' : 
+                           article.category === 'startup' ? 'startup' : 'tech';
+      
+      const card = document.createElement('div');
+      card.className = `news-card reveal ${delay}`;
+      card.innerHTML = `
+        <span class="nc-cat ${categoryClass}">${article.category.toUpperCase()}</span>
+        <h3>${article.title}</h3>
+        <p>${article.summary}</p>
+        <div class="nc-meta">
+          <span>${new Date(article.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+          <span class="read-link"><a href="${article.url}" style="color:inherit">READ MORE</a></span>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+    
+    // Re-observe new elements
+    container.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    
+  } catch (error) {
+    console.error('Error loading articles:', error);
+  }
+}
+
+// Load articles on page load
+loadArticles();
+
 
 // Load articles dynamically
 async function loadArticles() {
