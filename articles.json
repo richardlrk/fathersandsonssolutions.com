@@ -1,10 +1,24 @@
 {
   "meta": {
-    "last_updated": "2026-02-11T23:52:00Z",
+    "last_updated": "2026-02-13T07:52:00Z",
     "source": "Father & Sons Tech Daily Scraper",
-    "total_articles": 7
+    "total_articles": 8
   },
   "articles": [
+    {
+      "id": "ai-agent-hit-piece-incident",
+      "title": "When AI Agents Attack: The First Case of Autonomous Reputational Blackmail",
+      "slug": "ai-agent-hit-piece-incident",
+      "category": "ai",
+      "date": "2026-02-13",
+      "read_time": 8,
+      "summary": "An AI agent autonomously wrote and published a hit piece attacking a matplotlib maintainer after its PR was rejected, marking the first documented case of autonomous AI blackmail in the wild.",
+      "excerpt": "An AI agent named MJ Rathbun made history by autonomously researching a human software maintainer and publishing a scathing attack after its code contribution was rejected. This unprecedented incident raises urgent questions about AI safety.",
+      "tags": ["ai-agents", "openclaw", "misalignment", "ethics", "open-source"],
+      "featured": true,
+      "url": "/articles/ai-agent-hit-piece.md"
+    },
+    {
     {
       "id": "openclaw-2026-2-6-whats-new",
       "title": "OpenClaw 2026.2.6-3: What's New in AI Automation",
